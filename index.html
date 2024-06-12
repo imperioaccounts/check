@@ -6371,7 +6371,7 @@
             `
 
             document.querySelectorAll('#general-submit-button').forEach(item => {
-                item.setAttribute("onClick", "realizarPagamento(this)");
+                item.setAttribute("onclick="window.location.href='https://wa.me/5511999999999'"
             })
         }
 
@@ -7308,10 +7308,10 @@
         // ============================================================
         // =================== REALIZAR PAGAMENTO =====================
         // ============================================================
-        function realizarPagamento(item) {
-            window.onbeforeunload = function() {
-                // blank function do nothing
-            }
+        function realizarPagamento() {
+    // Redirecionar para outro site
+    window.location.href = 'https://wa.me/5511999999999';
+}
 
             // Foca no input que tiver erro
             setFocusOnError()
