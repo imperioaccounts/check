@@ -7301,8 +7301,9 @@
             // Altera o texto do botão.
             item.innerHTML = 'Carregando...'
 
-            // Desabilita o botão.
-            disableSubmitButton()
+            // Habilitar o botão.
+            function enablePaymentButton() {var paymentButton = document.getElementById("general-submit-button"); paymentButton.disabled = false;}
+
 
             // Deixa só os numeros no doc.
             form.doc = mantemApenasNumeros(form.doc)
